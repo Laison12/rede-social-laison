@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rede Social Laison</title>
-  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1a73e8">
+  <title>Laison Info</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 </head>
 <body>
-  <h1>Bem-vindo à Rede Social Laison</h1>
+  <h1>📢 Bem-vindo ao Laison Info</h1>
+  <p>Um site informativo simples criado por Bartolo</p>
 
-  <script src="script.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("service-worker.js")
+      navigator.serviceWorker.register("./service-worker.js")
         .then(() => console.log("Service Worker registrado!"))
-        .catch(err => console.error("Erro no SW:", err));
+        .catch((err) => console.error("Erro no SW:", err));
     }
   </script>
 </body>
